@@ -1,0 +1,177 @@
+:root {
+ --color: gold;
+ --title: Fugaz One;
+}
+
+body {
+ overflow-x: hidden;
+ margin: 0px;
+ color: white;
+ font-family: Inter;
+ font-size: 13px;
+ background-color: #333;
+ height: 2000px;
+}
+
+section.menu-button {
+ background-color: red;
+ width: 60px;
+ height: 60px;
+ clip-path: polygon(11% 17%, 100% 0, 100% 96%, 0% 100%);
+ position: fixed;
+ margin: 40px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ color: white;
+ font-size: 25px;
+}
+
+/***header***/
+
+section.header {
+ background-color: #222;
+ height: 95vh;
+ width: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ background-image: url(https://i.imgur.com/xPBSKnL.png);
+ background-size: cover;
+}
+
+.container {
+  margin-left: -600px;
+ height: 300px;
+}
+
+.nome {
+ font-size: 130px;
+ margin-top: 0px;
+ line-height: 75%;
+ text-transform: uppercase;
+ font-family: 'Fugaz One', sans-serif;
+ letter-spacing: -8px;
+}
+
+.text {
+ width: 450px;
+ margin-top: 10px;
+ text-align: ;
+ font-size: 14px;
+ line-height: 140%;
+ font-family: 'inter', sans-serif;
+}
+
+.text:before {
+ content: "";
+ width: 100px;
+ height: 3px;
+ background: var(--color);
+ position: absolute;
+ margin-top: 94px;
+ margin-left: 340px;
+}
+
+.nome:before{
+content:'';
+font-family:'cappuccicons';
+ position: absolute;
+ margin-left: 390px;
+ font-size: 60px;
+ margin-top: -10px;
+}
+
+.render {
+ position: absolute;
+ width: 900px;
+ height: 1100px;
+ background: url(https://i.imgur.com/4rCqpbS.png);
+ background-size: 830px;
+ padding-right: 0px;
+ background-position: top;
+ background-repeat: no-repeat;
+ margin-top: 250px;
+ filter: drop-shadow(5px 5px 0px red) saturate(150%);
+ margin-left: 20px;
+ border-left: 1040px solid transparent;
+ border-right: 540px solid transparent;
+ background-position:0px 0px;
+}
+
+@media (max-width: 1300px) {
+.render {
+    background-size: 700px;
+    margin-top: 480px;
+    margin-left: 150px;
+}
+}
+
+.before-render {
+ background: url(https://i.imgur.com/vjrOvPv.png);
+ position: absolute;
+ width: 500px;
+ height: 700px;
+ margin-left: 450px;
+ margin-top: 50px;
+ background-size: cover;
+  clip-path: polygon(11% 17%, 100% 0, 100% 96%, 0% 100%);
+ background: red;
+}
+
+.beforetext {
+ text-align: justify;
+ opacity: 0.8;
+ margin: 60px 30px 0px;
+ margin-left: 250px;
+ transform: skewY(-15deg)
+}
+
+.before-name {
+ position: absolute;
+ transform: rotate(90deg);
+ margin-left: 1000px;
+ margin-top: -430px;
+ font-family: var(--title);
+ text-transform: uppercase;
+ font-size: 15px;
+}
+/*----- 【 MUSIC PLAYER #08 by @glenthemes 】 -----*/
+[glenplayer08]{
+	
+	/*-- player position --*/
+	--MusicPlayer-Position: "bottom left";
+	--MusicPlayer-Corner-Offset: 20px;
+	
+	/*-- album image --*/
+	--MusicPlayer-Album-Image-Size: 54px;
+	--MusicPlayer-Album-Image-Corner-Roundness: 3px;
+	
+	/*-- player buttons (play/pause) --*/
+	--MusicPlayer-Buttons-Size: 12px;
+	--MusicPlayer-Buttons-Color: #ddd;
+	--MusicPlayer-Buttons-Padding: 8px;
+	--MusicPlayer-Buttons-Border-Size: 1px;
+	--MusicPlayer-Buttons-Border-Color: #bbb;
+	--MusicPlayer-Buttons-Background: #000000;
+	--MusicPlayer-Buttons-Background-Transparency: 45%;
+	--MusicPlayer-Buttons-Background-Blur: 3px;
+	
+	/*-- player song name --*/
+	--MusicPlayer-Song-Name-Size: 12px;
+	--MusicPlayer-Song-Name-Color: #222;
+	
+	/*-- player artist name --*/
+	--MusicPlayer-Artist-Name-Size: 12px;
+	--MusicPlayer-Artist-Name-Color: #777;
+	
+	/*-- player gap/spacing --*/
+	--MusicPlayer-Center-Gap: 14px;
+	--MusicPlayer-Text-Line-Spacing: 4px;
+	
+	/*-- playback settings --*/
+	--MusicPlayer-Autoplay: "no";
+	--MusicPlayer-Replay: "no";
+	
+}/* don't delete this line */
+/*---- END MUSIC PLAYER ----*/
